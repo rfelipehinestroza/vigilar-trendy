@@ -1,11 +1,11 @@
 import os, json, urllib.request, urllib.parse
 
 URL = ("https://www.maquillajetrendyshop.com/api/catalog_system/pub/products/search?ft="
-       + urllib.parse.quote("aura"))
+       + urllib.parse.quote("Aura"))
 req = urllib.request.Request(URL, headers={"User-Agent": "Mozilla/5.0"})
 data = json.load(urllib.request.urlopen(req, timeout=30))
 found = [p for p in data if "adviento" in p.get("productName", "").lower()]
-print(len(data), "resultados;", len(found), "con 'aura'")
+print(len(data), "resultados;", len(found), "con 'Aura'")
 
 if found:
     p = found[0]
