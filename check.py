@@ -1,8 +1,8 @@
 import os, json, urllib.request, urllib.parse
 
 # --- Lo único que cambias ---
-BUSQUEDA = "gloss"
-PALABRAS = ("gloss")
+BUSQUEDA = "calendario"
+PALABRAS = ("adviento", "advent", "calendario")
 # ----------------------------
 
 URL = ("https://www.maquillajetrendyshop.com/api/catalog_system/pub/products/search?ft="
